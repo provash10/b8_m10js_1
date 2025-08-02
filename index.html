@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b8_m10js_1  03 Aug 25</title>
+    <style>
+        #show{
+            width: 100px;
+            height: 50px;
+            border-radius: 25px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Foundation</h1>
+    <div id="show"> Default element</div>
+
+    
+    <script src="js/script.js"></script>
+    <button type="button" onclick="changeDIvColor()"> Change Div BG</button>
+
+    <script>
+        
+        let name = 'javascript class';
+
+        // array with variable data
+        let oddNumber = 5;
+        let isStudent = true;
+        let tax = 250000.50;
+
+        let person = {}
+
+        let colors = ['red', 'blue', 'pink', 'white'];
+
+        let address =[
+           { 
+            is_active : true,
+            present: 'some address'
+        },
+
+         { 
+            is_active : false,
+            present: 'some address'
+        }
+        ]
+        // ============= array with variable data
+
+        // alert(name)
+
+        // console.log(name)
+        // console.log('name', name)
+
+        // document.write(name)  // index a show korbe
+
+        document.getElementById('show').innerHTML= divBgColor;
+        function changeDIvColor(){
+            document.getElementById('show').style.backgroundColor =divBgColor;
+        }
+
+        // if conditions
+        let hasClass = prompt('Any class today')
+        
+        // if(hasClass == 'yes'){
+        //     alert('condition true')
+        // }
+        // else{
+        //     alert('condition false')
+        // }
+
+        if(hasClass == 'yes'){
+            alert('Yes, We have class');
+        }
+        else{
+            alert('No Class Today');
+        }
+
+    </script>
+
+
+</body>
+</html>
